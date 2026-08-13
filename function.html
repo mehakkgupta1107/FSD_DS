@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
 </head>
 <body>
-    <script>
-        const fun=()=>"hello";
 
-        fun();
-        fun();
-        document.write(fun());
-    </script>
+<script>
+
+const car = () => {
+    document.write("Name: Car<br>");
+    document.write("Company: Toyota<br>");
+    document.write("Capacity: 5 people");
+};
+
+const aeroplane = () => {
+    document.write("Name: Aeroplane<br>");
+    document.write("Company: Boeing<br>");
+    document.write("Capacity: 300 people");
+};
+
+const helicopter = () => {
+    document.write("Name: Helicopter<br>");
+    document.write("Company: Airbus<br>");
+    document.write("Capacity: 6 people");
+};
+
+let choice = prompt("Enter 1 for Car, 2 for Aeroplane, 3 for Helicopter");
+
+switch(choice) {
+
+    case "1":
+        car();
+        break;
+
+    case "2":
+        aeroplane();
+        break;
+
+    case "3":
+        helicopter();
+        break;
+
+    default:
+        document.write("Invalid choice");
+}
+
+</script>
+
 </body>
 </html>
