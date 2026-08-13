@@ -6,10 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
-        for(let i=0;i<5;i++){
-            document.write("hello");
-        }
-    </script>
+    
+    const a = ["a1", "a2", "a3"];
+    let len=a.length;
+    let text="";
+
+
+    for(let i = 0; i < 5; i++){
+        text+=a[i]+"<br>";
+    }
+
+    document.getElementById("demo").innerHTML=text;
+</script>
+   
 </body>
 </html>
