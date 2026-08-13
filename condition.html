@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=153;
+        var s=0;
+        var a=n;
+
+        while(n>0){
+            var d=n%10;
+            s=s+(d*d*d);
+            n=Math.floor(n/10);
+        }
+        
+        if(a==s){
+            document.write("yes");
+        }
+        else{
+            document.write("no");
+        }
+    </script>
+</body>
+</html>
